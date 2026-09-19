@@ -1,0 +1,3 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { AdminScreen } from "@/components/turf/admin";
+export const Route=createFileRoute("/admin")({head:()=>({meta:[{title:"Central Administration — TurfNation"},{name:"description",content:"TurfNation platform governance, venue certification, and settlement operations."},{property:"og:title",content:"Central Administration — TurfNation"},{property:"og:description",content:"Manage TurfNation venues, locks, payouts, and platform controls."},{property:"og:type",content:"website"},{name:"twitter:card",content:"summary_large_image"}]}),component:AdminScreen});

@@ -1,0 +1,3 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { OwnerScreen } from "@/components/turf/owner";
+export const Route=createFileRoute("/owner")({head:()=>({meta:[{title:"Apex Sports Hub Operations — TurfNation"},{name:"description",content:"Live schedules, revenue, and facility controls for Apex Sports Hub."},{property:"og:title",content:"Apex Sports Hub Operations — TurfNation"},{property:"og:description",content:"Manage live pitches, bookings, and facility operations."},{property:"og:type",content:"website"},{name:"twitter:card",content:"summary_large_image"}]}),component:OwnerScreen});
