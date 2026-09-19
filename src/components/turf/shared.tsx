@@ -25,7 +25,7 @@ export function Header() {
 }
 
 export function Page({ children, className="" }: { children: ReactNode; className?: string }) { return <><Header/><main className={className}>{children}</main></> }
-export function Panel({ children, className="" }: { children: ReactNode; className?: string }) { return <section className={`rounded-lg border border-border bg-card ${className}`}>{children}</section> }
+export function Panel({ children, className="", id }: { children: ReactNode; className?: string; id?: string }) { return <section id={id} className={`rounded-lg border border-border bg-card ${className}`}>{children}</section> }
 export function Kicker({ children }: { children: ReactNode }) { return <div className="mb-2 text-[11px] font-bold uppercase tracking-widest text-primary">{children}</div> }
 export function SectionTitle({ children, sub }: { children: ReactNode; sub?: string }) { return <div><h2 className="text-xl font-bold">{children}</h2>{sub && <p className="mt-1 text-xs text-muted-foreground">{sub}</p>}</div> }
 export function Verify({ text="Verified" }: { text?: string }) { return <span className="inline-flex items-center gap-1 text-xs font-semibold text-primary"><ShieldCheck className="size-3.5"/>{text}</span> }
