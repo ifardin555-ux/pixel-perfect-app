@@ -1,0 +1,3 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { VenueScreen } from "@/components/turf/venue";
+export const Route=createFileRoute("/venue")({head:()=>({meta:[{title:"Apex Arena — TurfNation"},{name:"description",content:"Choose a pitch and reserve a match slot at Apex Arena."},{property:"og:title",content:"Apex Arena — TurfNation"},{property:"og:description",content:"Live pitch availability and instant booking at Apex Arena."},{property:"og:type",content:"website"},{name:"twitter:card",content:"summary_large_image"}]}),component:VenueScreen});
